@@ -1,0 +1,222 @@
+import { SigamiRequest } from './types';
+
+export const COLORS = {
+  primary: '#22d3ee', // Cyan-400
+  secondary: '#fcd34d', // Amber-300
+  danger: '#f87171', // Red-400
+  success: '#34d399', // Emerald-400
+  neutral: '#94a3b8', // Slate-400
+  darkBg: '#24262d', // Card background
+  darkerBg: '#1a1c23', // Main background
+  chart: [
+    '#22d3ee', // Cyan
+    '#fcd34d', // Amber
+    '#f87171', // Red
+    '#34d399', // Emerald
+    '#818cf8', // Indigo
+    '#f472b6', // Pink
+  ]
+};
+
+export const MOCK_DATA: SigamiRequest[] = [
+  {
+    id: '1',
+    protocolo: '2025-0001',
+    nprocessopmbr: 'Proc-123',
+    assunto: 'Chegada de Processo Judicial',
+    subsecretaria: 'SUBEXEC',
+    prioridade: 'Alta',
+    status: 'Não Iniciado',
+    abertura: '2025-09-15',
+    prazo: '2025-09-25',
+    conclusao: '',
+    solicitante: 'Ministério Público',
+    analista: 'Analista 1',
+    descricao: 'Verificação de denúncia ambiental.',
+    logradouro: 'Rua A',
+    bairro: 'Centro',
+    cidade: 'Belford Roxo',
+    uf: 'RJ',
+    cep: '26111-111'
+  },
+  {
+    id: '2',
+    protocolo: '2025-0002',
+    nprocessopmbr: 'Proc-124',
+    assunto: 'Emergência Ambiental',
+    subsecretaria: 'SUBCLAM',
+    prioridade: 'Crítica',
+    status: 'Em Atendimento',
+    abertura: '2025-09-16',
+    prazo: '2025-09-26',
+    conclusao: '',
+    solicitante: 'Defesa Civil',
+    analista: 'Analista 2',
+    descricao: 'Vazamento de óleo.',
+    logradouro: 'Rua B',
+    bairro: 'Areia Branca',
+    cidade: 'Belford Roxo',
+    uf: 'RJ',
+    cep: '26111-222'
+  },
+  {
+    id: '3',
+    protocolo: '2025-0003',
+    nprocessopmbr: 'Proc-125',
+    assunto: 'Licenciamento',
+    subsecretaria: 'SUBINFRAS',
+    prioridade: 'Média',
+    status: 'Aguardando Solicitante',
+    abertura: '2025-09-18',
+    prazo: '2025-09-28',
+    conclusao: '',
+    solicitante: 'Empresa X',
+    analista: 'Analista 3',
+    descricao: 'Renovação de LO.',
+    logradouro: 'Rua C',
+    bairro: 'Heliópolis',
+    cidade: 'Belford Roxo',
+    uf: 'RJ',
+    cep: '26111-333'
+  },
+  {
+    id: '4',
+    protocolo: '2025-0004',
+    nprocessopmbr: 'Proc-126',
+    assunto: 'Ouvidoria SEMAS',
+    subsecretaria: 'SUBCLAM',
+    prioridade: 'Baixa',
+    status: 'Concluída',
+    abertura: '2025-09-20',
+    prazo: '2025-09-27',
+    conclusao: '2025-09-25',
+    solicitante: 'Cidadão',
+    analista: 'Analista 4',
+    descricao: 'Reclamação de barulho.',
+    logradouro: 'Rua D',
+    bairro: 'Centro',
+    cidade: 'Belford Roxo',
+    uf: 'RJ',
+    cep: '26111-444'
+  },
+  {
+    id: '5',
+    protocolo: '2025-0005',
+    nprocessopmbr: 'Proc-127',
+    assunto: 'Agenda SM',
+    subsecretaria: 'SUBEXEC',
+    prioridade: 'Média',
+    status: 'Não Iniciado',
+    abertura: '2025-09-22',
+    prazo: '2025-09-29',
+    conclusao: '',
+    solicitante: 'Secretário',
+    analista: 'Analista 5',
+    descricao: 'Reunião com comitê.',
+    logradouro: 'Av. Principal',
+    bairro: 'Barro Vermelho',
+    cidade: 'Belford Roxo',
+    uf: 'RJ',
+    cep: '26111-555'
+  },
+   {
+    id: '6',
+    protocolo: '2025-0006',
+    nprocessopmbr: 'Proc-128',
+    assunto: 'Emergência Ambiental',
+    subsecretaria: 'SUBEXEC',
+    prioridade: 'Alta',
+    status: 'Em Atendimento',
+    abertura: '2025-09-24',
+    prazo: '2025-09-30',
+    conclusao: '',
+    solicitante: 'Bombeiros',
+    analista: 'Analista 6',
+    descricao: 'Incêndio em vegetação.',
+    logradouro: 'Rua da Mata',
+    bairro: 'Centro',
+    cidade: 'Nova Iguaçu',
+    uf: 'RJ',
+    cep: '26000-000'
+  },
+  {
+    id: '7',
+    protocolo: '2025-0007',
+    nprocessopmbr: 'Proc-129',
+    assunto: 'Licenciamento',
+    subsecretaria: 'SUBINFRAS',
+    prioridade: 'Alta',
+    status: 'Não Iniciado',
+    abertura: '2025-09-25',
+    prazo: '2025-10-05',
+    conclusao: '',
+    solicitante: 'Construtora Y',
+    analista: 'Analista 7',
+    descricao: 'Licença de Instalação.',
+    logradouro: 'Est. do Iguaçu',
+    bairro: 'Posse',
+    cidade: 'Nova Iguaçu',
+    uf: 'RJ',
+    cep: '26000-111'
+  },
+  {
+    id: '8',
+    protocolo: '2025-0008',
+    nprocessopmbr: 'Proc-130',
+    assunto: 'Ouvidoria SEMAS',
+    subsecretaria: 'SUBCLAM',
+    prioridade: 'Baixa',
+    status: 'Concluída',
+    abertura: '2025-09-26',
+    prazo: '2025-10-06',
+    conclusao: '2025-09-29',
+    solicitante: 'Anônimo',
+    analista: 'Analista 8',
+    descricao: 'Descarte irregular de lixo.',
+    logradouro: 'Rua Conde de Bonfim',
+    bairro: 'Tijuca',
+    cidade: 'Rio de Janeiro',
+    uf: 'RJ',
+    cep: '20520-054'
+  },
+  {
+    id: '9',
+    protocolo: '2025-0009',
+    nprocessopmbr: 'Proc-131',
+    assunto: 'Emergência Ambiental',
+    subsecretaria: 'SUBEXEC',
+    prioridade: 'Crítica',
+    status: 'Em Atendimento',
+    abertura: '2025-09-27',
+    prazo: '2025-10-07',
+    conclusao: '',
+    solicitante: 'Polícia Ambiental',
+    analista: 'Analista 9',
+    descricao: 'Resgate de fauna.',
+    logradouro: 'Rua Dias da Cruz',
+    bairro: 'Méier',
+    cidade: 'Rio de Janeiro',
+    uf: 'RJ',
+    cep: '20720-012'
+  },
+  {
+    id: '10',
+    protocolo: '2025-0010',
+    nprocessopmbr: 'Proc-132',
+    assunto: 'Agenda SM',
+    subsecretaria: 'SUBEXEC',
+    prioridade: 'Média',
+    status: 'Não Iniciado',
+    abertura: '2025-09-28',
+    prazo: '2025-10-08',
+    conclusao: '',
+    solicitante: 'Prefeitura',
+    analista: 'Analista 10',
+    descricao: 'Visita técnica.',
+    logradouro: 'Av. Automóvel Clube',
+    bairro: 'Centro',
+    cidade: 'São João de Meriti',
+    uf: 'RJ',
+    cep: '25515-000'
+  }
+];

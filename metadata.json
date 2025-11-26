@@ -1,0 +1,5 @@
+{
+  "name": "Report SIGAMI",
+  "description": "Environmental management dashboard for requesting reporting and analysis with Excel upload capabilities.",
+  "requestFramePermissions": []
+}
